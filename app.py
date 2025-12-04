@@ -5,6 +5,11 @@ from pathlib import Path
 import importlib.util
 import fastf1
 import re
+import joblib
+import xgboost as xgb
+import json
+import sys
+import types
 
 # -----------------------------------------------------------
 # Streamlit Config
@@ -95,6 +100,115 @@ def merge_points(df, season_df):
         merged["PointsProp"] = merged["Points"] / max_pts
 
     return merged
+
+
+# -----------------------------------------------------------
+# Model Loading Functions
+# -----------------------------------------------------------
+def load_preprocessor():
+    p = ARTIFACTS / "preprocessing_pipeline.joblib"
+    if not p.exists():
+        raise FileNotFoundError(f"Preprocessing pipeline not found at {p}")
+    try:
+        import sys
+        import types
+        mod_name = 'sklearn.compose._column_transformer'
+        if mod_name not in sys.modules:
+            try:
+                import importlib
+                sys.modules[mod_name] = importlib.import_module(mod_name)
+            except Exception:
+                sys.modules[mod_name] = types.ModuleType(mod_name)
+        mod = sys.modules[mod_name]
+        if not hasattr(mod, '_RemainderColsList'):
+            class _RemainderColsList(list):
+                pass
+            setattr(mod, '_RemainderColsList', _RemainderColsList)
+    except Exception:
+        pass
+
+    return joblib.load(p)
+
+
+def load_ensemble_models():
+    models_dir = ARTIFACTS / "ensemble_fold_models_remove_lapped"
+    if not (models_dir.exists() and any(models_dir.iterdir())):
+        models_dir = ARTIFACTS / "ensemble_fold_models"
+    if models_dir.exists() and any(models_dir.iterdir()):
+        models = []
+        for f in sorted(models_dir.iterdir()):
+            if f.suffix in ('.joblib', '.pkl'):
+                models.append(joblib.load(f))
+        if models:
+            return models
+    for fname in ("xgb_minimal_cv_randomized.joblib", "xgb_minimal_cv.joblib", "xgb_minimal.joblib"):
+        candidate = ARTIFACTS / fname
+        if candidate.exists():
+            return [joblib.load(candidate)]
+    raise FileNotFoundError("No model artifacts found in artifacts/")
+
+
+def apply_calibration(preds: np.ndarray) -> np.ndarray:
+    calib_path = ARTIFACTS / "linear_calibration_remove_lapped.joblib"
+    if not calib_path.exists():
+        calib_path = ARTIFACTS / "linear_calibration.joblib"
+    if calib_path.exists():
+        lr = joblib.load(calib_path)
+        return lr.predict(preds.reshape(-1, 1))
+    return preds
+
+
+def score(input_csv: Path, output_csv: Path):
+    preproc = load_preprocessor()
+    models = load_ensemble_models()
+
+    df = pd.read_csv(input_csv)
+    try:
+        from artifacts.input_normalize import normalize_minimal_features
+        df = normalize_minimal_features(df)
+    except Exception:
+        pass
+    minimal_cols = ['GridPosition','AvgQualiTime','weather_tire_cluster','SOFT','MEDIUM','HARD','INTERMEDIATE','WET','races_prior_this_season','Rain','PointsProp','Status']
+    missing = [c for c in minimal_cols if c not in df.columns]
+    if missing:
+        print(f"Warning: input CSV is missing expected columns: {missing}.")
+    initial_n = len(df)
+    if 'Status' in df.columns:
+        if (df['Status'] == 'Lapped').any():
+            df = df[df['Status'] != 'Lapped']
+    else:
+        for col in ['Status__Lapped', 'Status__Lapped.0']:
+            if col in df.columns:
+                if (df[col] == 1).any():
+                    df = df[df[col] != 1]
+                break
+    if len(df) == 0:
+        raise ValueError('No rows left to score after dropping lapped drivers.')
+    idx = df.index
+
+    try:
+        X = preproc.transform(df)
+    except Exception as e:
+        minimal_features = [
+            'GridPosition','AvgQualiTime','weather_tire_cluster',
+            'SOFT','MEDIUM','HARD','INTERMEDIATE','WET',
+            'races_prior_this_season','Rain','PointsProp'
+        ]
+        provided = df.copy()
+        missing = [c for c in minimal_features if c not in provided.columns]
+        if missing:
+            raise ValueError(f"Missing minimal features: {missing}")
+        X = provided[minimal_features].values
+
+    preds = []
+    for model in models:
+        pred = model.predict(X)
+        preds.append(pred)
+    avg_pred = np.mean(preds, axis=0)
+    calibrated = apply_calibration(avg_pred)
+
+    result = pd.DataFrame({'index': idx, 'prediction': calibrated})
+    result.to_csv(output_csv, index=False)
 
 
 # -----------------------------------------------------------
@@ -301,15 +415,8 @@ elif page == "Run Prediction":
     # Run Prediction
     # ----------------------------------------------------
     if st.button("Run Prediction"):
-        if not scorer_path.exists():
-            st.error("Missing artifacts/score_model.py")
-            st.stop()
-
         with st.spinner("Predicting outcome…"):
-            spec = importlib.util.spec_from_file_location("score_model", scorer_path)
-            scorer = importlib.util.module_from_spec(spec)
-            spec.loader.exec_module(scorer)
-            scorer.score(MODEL_INPUT, PRED_OUT)
+            score(MODEL_INPUT, PRED_OUT)
 
         scored = pd.read_csv(PRED_OUT)
         preds = scored["prediction"]
