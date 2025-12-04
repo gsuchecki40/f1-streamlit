@@ -1,8 +1,6 @@
-Link to Streamlit App
+## Formula One Streamlit Model
 
 [http://www.f1pred.streamlit.app/ ](https://f1pred.streamlit.app/)
-
-## Formula One Streamlit Model
 
 This model operates with the Streamlit and a playwright scraper file that can be easily modified to predict any Grand Prix on the schedule
 
