@@ -381,9 +381,14 @@ elif page == "Run Prediction":
         st.stop()
 
     X_train = pd.read_csv(xtrain_path)
-    expected_cols = X_train.columns.tolist()
+    # Use raw feature columns that the preprocessing pipeline expects
+    raw_cols = [
+        'GridPosition', 'AirTemp_C', 'TrackTemp_C', 'Humidity_%', 'Pressure_hPa',
+        'WindSpeed_mps', 'WindDirection_deg', 'races_prior_this_season', 'Rain',
+        'Driver', 'Team', 'PointsProp', 'SOFT', 'MEDIUM', 'HARD'
+    ]
 
-    model_input = pd.DataFrame(0, index=range(len(df)), columns=expected_cols)
+    model_input = pd.DataFrame(0, index=range(len(df)), columns=raw_cols)
 
     # Fill known fields
     settings = {
