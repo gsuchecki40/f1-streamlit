@@ -202,7 +202,13 @@ def score(input_csv: Path, output_csv: Path):
 
     preds = []
     for model in models:
-        pred = model.predict(X)
+        try:
+            pred = model.predict(X)
+        except TypeError as e:
+            if "DMatrix" in str(e):
+                pred = model.predict(xgb.DMatrix(X))
+            else:
+                raise
         preds.append(pred)
     avg_pred = np.mean(preds, axis=0)
     calibrated = apply_calibration(avg_pred)
