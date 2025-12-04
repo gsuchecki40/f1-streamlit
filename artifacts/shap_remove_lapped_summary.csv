@@ -1,0 +1,12 @@
+feature,mean_abs_shap
+PointsProp,8.584801
+GridPosition,6.548461
+AvgQualiTime,1.0170895
+MEDIUM,0.81164414
+HARD,0.67908156
+races_prior_this_season,0.65603614
+SOFT,0.49010244
+INTERMEDIATE,0.13400537
+weather_tire_cluster,0.09772638
+WET,0.0
+Rain,0.0

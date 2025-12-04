@@ -1,0 +1,15 @@
+,0
+GridPosition,9.831719
+HARD,3.077637
+MEDIUM,1.4499476
+AirTemp_C,1.2678528
+SOFT,1.0290979
+Pressure_hPa,0.783237
+TrackTemp_C,0.7790264
+WindSpeed_mps,0.7019168
+races_prior_this_season,0.6638926
+WindDirection_deg,0.6427466
+Humidity_%,0.60069406
+INTERMEDIATE,0.20779477
+bias,0.07119131
+WET,0.0020007384

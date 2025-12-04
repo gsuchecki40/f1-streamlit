@@ -1,0 +1,15 @@
+Starting faithful SHAP run
+Loading CSV /Users/grantsuchecki/Desktop/Desktop/Essentials/NotreDame/Personal Python/Formula1/premodeldatav1.csv
+Filtering validation rows for Season == 2024
+Loading pipeline from /Users/grantsuchecki/Desktop/Desktop/Essentials/NotreDame/Personal Python/Formula1/artifacts/preprocessing_pipeline.joblib
+Transforming validation rows with pipeline...
+Transformed X_val shape: (479, 447); features: 447
+Loading XGBoost model from /Users/grantsuchecki/Desktop/Desktop/Essentials/NotreDame/Personal Python/Formula1/artifacts/xgb_model_tuned_conservative.json
+Model expects 13 features (booster.num_features)
+Feature count mismatch: X has 447 cols, model expects 13. Padding/truncating
+X_used shape for SHAP: (479, 13)
+Running TreeExplainer on sample size 95
+Computed SHAP values shape: (95, 13)
+Saved beeswarm to /Users/grantsuchecki/Desktop/Desktop/Essentials/NotreDame/Personal Python/Formula1/artifacts/shap_faithful_beeswarm.png
+Saved force plot to /Users/grantsuchecki/Desktop/Desktop/Essentials/NotreDame/Personal Python/Formula1/artifacts/shap_faithful_force.html
+Faithful SHAP run complete

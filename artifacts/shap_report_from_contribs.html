@@ -1,0 +1,22 @@
+<html><head><meta charset="utf-8"><title>SHAP (pred_contrib) report</title></head><body>
+<h1>SHAP-like report (XGBoost pred_contribs)</h1>
+<h2>Global importance (validation — mean |contribution|)</h2>
+<img src="shap_global_bar_from_contribs.png" style="max-width:900px">
+<h2>Top features (validation)</h2>
+<ol>
+<li>GridPosition: 9.8317</li>
+<li>HARD: 3.0776</li>
+<li>MEDIUM: 1.4499</li>
+<li>AirTemp_C: 1.2679</li>
+<li>SOFT: 1.0291</li>
+<li>Pressure_hPa: 0.7832</li>
+<li>TrackTemp_C: 0.7790</li>
+<li>WindSpeed_mps: 0.7019</li>
+<li>races_prior_this_season: 0.6639</li>
+<li>WindDirection_deg: 0.6427</li>
+</ol>
+<h2>Local contributions (first 3 test rows)</h2>
+<h3>Test row 0</h3><a href="shap_local_test_row_0.html">Open contribution table</a>
+<h3>Test row 1</h3><a href="shap_local_test_row_1.html">Open contribution table</a>
+<h3>Test row 2</h3><a href="shap_local_test_row_2.html">Open contribution table</a>
+</body></html>

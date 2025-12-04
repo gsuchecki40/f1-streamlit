@@ -1,0 +1,11 @@
+Loading X_val from /Users/grantsuchecki/Desktop/Desktop/Essentials/NotreDame/Personal Python/Formula1/artifacts/X_val.csv
+X_val shape: (479, 446)
+Loading model /Users/grantsuchecki/Desktop/Desktop/Essentials/NotreDame/Personal Python/Formula1/artifacts/xgb_model_tuned_conservative.json
+Model loaded; booster.num_features()=13
+Mismatch: X_sample has 446, model expects 13. Padding/truncating
+X_used shape: (47, 13)
+Building TreeExplainer...
+Computed SHAP values shape: (47, 13)
+Saved beeswarm to /Users/grantsuchecki/Desktop/Desktop/Essentials/NotreDame/Personal Python/Formula1/artifacts/shap_tuned_beeswarm_with_ids.png
+Saved force to /Users/grantsuchecki/Desktop/Desktop/Essentials/NotreDame/Personal Python/Formula1/artifacts/shap_tuned_force_with_ids.html
+Done

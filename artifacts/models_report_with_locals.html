@@ -1,0 +1,81 @@
+<html><head><meta charset="utf-8"><title>Models report with locals</title>
+<style>
+body{font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial; margin:24px; color:#222}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(360px,1fr));gap:18px}
+.card{border:1px solid #e6e6e6;border-radius:8px;padding:12px;box-shadow:0 1px 3px rgba(0,0,0,0.04)}
+.title{display:flex;justify-content:space-between;align-items:center}
+.badge{background:#0366d6;color:white;padding:6px 10px;border-radius:999px;font-size:0.9rem}
+img{max-width:100%;height:auto;border-radius:6px}
+.meta{color:#666;font-size:0.9rem;margin-bottom:8px}
+.caption{font-size:0.85rem;color:#444;margin-top:6px}
+</style></head><body>
+<h1 style="margin-top:0">Models report: SHAP visuals and local explanations</h1>
+<div class="grid">
+<div class="card">
+<div class="title">
+<strong>Model comparisons</strong>
+<span class='badge'>RMSE / MAE / R^2</span>
+</div>
+<div class="meta">Path: artifacts/model_comparison_metrics.png</div>
+<img src='artifacts/model_comparison_metrics.png' alt='model comparison metrics'>
+<div class="caption">RMSE / MAE / R^2 across validation predictions</div>
+</div>
+<div class="card">
+<div class="title">
+<strong>Cluster heatmap (model features)</strong>
+<span class='badge'>Weather/tire clusters</span>
+</div>
+<div class="meta">Path: artifacts/cluster_heatmap_model_features.png</div>
+<img src='artifacts/cluster_heatmap_model_features.png' alt='cluster heatmap model features'>
+<div class="caption">Mean of regression model features per weather-tire cluster (normalized)</div>
+</div>
+<div class="card">
+<div class="title">
+<strong>with_pipeline</strong>
+<span class='badge'>RMSE 2.22s</span>
+</div>
+<div class="meta">Path: artifacts/shap_with_pipeline_global.png</div>
+<img src='artifacts/shap_with_pipeline_global.png' alt='global shap'>
+<div class="caption">Global mean |SHAP| (top features)</div>
+<div style="margin-top:10px"><details><summary>Local explanations</summary><ul>
+<li><a href='artifacts/shap_local_with_pipeline_row0.html' target='_blank'>shap_local_with_pipeline_row0.html</a></li>
+<li><a href='artifacts/shap_local_with_pipeline_row1.html' target='_blank'>shap_local_with_pipeline_row1.html</a></li>
+<li><a href='artifacts/shap_local_with_pipeline_row2.html' target='_blank'>shap_local_with_pipeline_row2.html</a></li>
+<li><a href='artifacts/shap_local_with_pipeline_row3.html' target='_blank'>shap_local_with_pipeline_row3.html</a></li>
+<li><a href='artifacts/shap_local_with_pipeline_row4.html' target='_blank'>shap_local_with_pipeline_row4.html</a></li>
+</ul></details></div>
+</div>
+<div class="card">
+<div class="title">
+<strong>xgb_tuned_conservative</strong>
+<span class='badge'>RMSE 24.29s</span>
+</div>
+<div class="meta">Path: artifacts/shap_xgb_tuned_conservative_global.png</div>
+<img src='artifacts/shap_xgb_tuned_conservative_global.png' alt='global shap'>
+<div class="caption">Global mean |SHAP| (top features)</div>
+<div style="margin-top:10px"><details><summary>Local explanations</summary><ul>
+<li><a href='artifacts/shap_local_xgb_tuned_conservative_row0.html' target='_blank'>shap_local_xgb_tuned_conservative_row0.html</a></li>
+<li><a href='artifacts/shap_local_xgb_tuned_conservative_row1.html' target='_blank'>shap_local_xgb_tuned_conservative_row1.html</a></li>
+<li><a href='artifacts/shap_local_xgb_tuned_conservative_row2.html' target='_blank'>shap_local_xgb_tuned_conservative_row2.html</a></li>
+<li><a href='artifacts/shap_local_xgb_tuned_conservative_row3.html' target='_blank'>shap_local_xgb_tuned_conservative_row3.html</a></li>
+<li><a href='artifacts/shap_local_xgb_tuned_conservative_row4.html' target='_blank'>shap_local_xgb_tuned_conservative_row4.html</a></li>
+</ul></details></div>
+</div>
+<div class="card">
+<div class="title">
+<strong>xgb_untitled_external</strong>
+<span class='badge'>RMSE 2.22s</span>
+</div>
+<div class="meta">Path: artifacts/shap_xgb_untitled_external_global.png</div>
+<img src='artifacts/shap_xgb_untitled_external_global.png' alt='global shap'>
+<div class="caption">Global mean |SHAP| (top features)</div>
+<div style="margin-top:10px"><details><summary>Local explanations</summary><ul>
+<li><a href='artifacts/shap_local_xgb_untitled_external_row0.html' target='_blank'>shap_local_xgb_untitled_external_row0.html</a></li>
+<li><a href='artifacts/shap_local_xgb_untitled_external_row1.html' target='_blank'>shap_local_xgb_untitled_external_row1.html</a></li>
+<li><a href='artifacts/shap_local_xgb_untitled_external_row2.html' target='_blank'>shap_local_xgb_untitled_external_row2.html</a></li>
+<li><a href='artifacts/shap_local_xgb_untitled_external_row3.html' target='_blank'>shap_local_xgb_untitled_external_row3.html</a></li>
+<li><a href='artifacts/shap_local_xgb_untitled_external_row4.html' target='_blank'>shap_local_xgb_untitled_external_row4.html</a></li>
+</ul></details></div>
+</div>
+</div>
+</body></html>

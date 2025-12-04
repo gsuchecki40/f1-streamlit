@@ -1,0 +1,6 @@
+Cluster 0: 481 rows — warm, moderate humidity, dominant tyre: HARD
+Cluster 1: 256 rows — warm, moderate humidity, dominant tyre: MEDIUM
+Cluster 2: 76 rows — mild, humid, dominant tyre: INTERMEDIATE
+Cluster 3: 184 rows — warm, humid, dominant tyre: SOFT
+Cluster 4: 236 rows — mild, moderate humidity, dominant tyre: HARD
+Cluster 5: 5 rows — warm, moderate humidity, dominant tyre: HARD

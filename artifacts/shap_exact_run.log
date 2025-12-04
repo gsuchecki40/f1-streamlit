@@ -1,0 +1,11 @@
+Starting exact-input SHAP run
+Loading CSV /Users/grantsuchecki/Desktop/Desktop/Essentials/NotreDame/Personal Python/Formula1/premodeldatav1.csv
+Train rows: 376, Val rows: 424
+X_val shape after imputation: (424, 13); columns: ['GridPosition', 'AirTemp_C', 'TrackTemp_C', 'Humidity_%', 'Pressure_hPa', 'WindSpeed_mps', 'WindDirection_deg', 'SOFT', 'MEDIUM', 'HARD', 'INTERMEDIATE', 'WET', 'races_prior_this_season']
+Loading tuned model from /Users/grantsuchecki/Desktop/Desktop/Essentials/NotreDame/Personal Python/Formula1/artifacts/xgb_model_tuned_conservative.json
+Booster reports it expects 13 features
+Running TreeExplainer on sample size 84
+Computed SHAP values shape: (84, 13)
+Saved beeswarm to /Users/grantsuchecki/Desktop/Desktop/Essentials/NotreDame/Personal Python/Formula1/artifacts/shap_exact_beeswarm.png
+Saved force plot to /Users/grantsuchecki/Desktop/Desktop/Essentials/NotreDame/Personal Python/Formula1/artifacts/shap_exact_force.html
+Exact-input SHAP run complete

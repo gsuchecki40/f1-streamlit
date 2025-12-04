@@ -1,0 +1,133 @@
+Starting SHAP TreeExplainer run...
+Using model: /Users/grantsuchecki/Desktop/Desktop/Essentials/NotreDame/Personal Python/Formula1/artifacts/xgb_model_tuned_conservative.json
+Loading X_val from /Users/grantsuchecki/Desktop/Desktop/Essentials/NotreDame/Personal Python/Formula1/artifacts/X_val.csv
+X_val shape: (479, 446)
+Sample size for SHAP: 47
+Loading XGBoost model into Booster...
+Model loaded.
+Building TreeExplainer (this may take a moment)...
+Explainer built. Computing SHAP values...
+
+ERROR:
+Traceback (most recent call last):
+  File "/Users/grantsuchecki/Desktop/Desktop/Essentials/NotreDame/Personal Python/Formula1/artifacts/run_shap_treeexplainer_tuned.py", line 94, in <module>
+    shap_exp = explainer(X_sample)
+               ^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.12/site-packages/shap/explainers/_tree.py", line 380, in __call__
+    v = self.shap_values(X, y=y, from_call=True, check_additivity=check_additivity, approximate=approximate)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.12/site-packages/shap/explainers/_tree.py", line 565, in shap_values
+    phi = self.model.original_model.predict(
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.12/site-packages/xgboost/core.py", line 705, in inner_f
+    return func(**kwargs)
+           ^^^^^^^^^^^^^^
+  File "/opt/anaconda3/lib/python3.12/site-packages/xgboost/core.py", line 2503, in predict
+    _check_call(
+  File "/opt/anaconda3/lib/python3.12/site-packages/xgboost/core.py", line 310, in _check_call
+    raise XGBoostError(py_str(_LIB.XGBGetLastError()))
+xgboost.core.XGBoostError: [22:21:09] /Users/runner/miniforge3/conda-bld/xgboost-split_1758007651359/work/src/c_api/c_api_utils.h:129: Check failed: std::accumulate(shape.cbegin(), shape.cend(), static_cast<bst_ulong>(1), std::multiplies<>{}) == chunksize * rows (21009 vs. 658) : 
+Stack trace:
+  [bt] (0) 1   libxgboost.dylib                    0x0000000115b22bd8 dmlc::LogMessageFatal::~LogMessageFatal() + 124
+  [bt] (1) 2   libxgboost.dylib                    0x0000000115ba8458 xgboost::CalcPredictShape(bool, xgboost::PredictionType, unsigned long, unsigned long, unsigned long, unsigned long, unsigned long, std::__1::vector<unsigned long long, std::__1::allocator<unsigned long long>>*, unsigned long long*) + 1292
+  [bt] (2) 3   libxgboost.dylib                    0x0000000115ba7820 XGBoosterPredictFromDMatrix + 1264
+  [bt] (3) 4   libffi.8.dylib                      0x0000000103b3804c ffi_call_SYSV + 76
+  [bt] (4) 5   libffi.8.dylib                      0x0000000103b35834 ffi_call_int + 1404
+  [bt] (5) 6   _ctypes.cpython-312-darwin.so       0x0000000103b18958 _ctypes_callproc + 1216
+  [bt] (6) 7   _ctypes.cpython-312-darwin.so       0x0000000103b1247c PyCFuncPtr_call + 1208
+  [bt] (7) 8   python3.12                          0x0000000102ad33bc _PyObject_MakeTpCall + 316
+  [bt] (8) 9   python3.12                          0x0000000102bed98c _PyEval_EvalFrameDefault + 51644
+
+
+Starting SHAP TreeExplainer run...
+Using model: /Users/grantsuchecki/Desktop/Desktop/Essentials/NotreDame/Personal Python/Formula1/artifacts/xgb_model_tuned_conservative.json
+Loading X_val from /Users/grantsuchecki/Desktop/Desktop/Essentials/NotreDame/Personal Python/Formula1/artifacts/X_val.csv
+X_val shape: (479, 446)
+Sample size for SHAP: 47
+Loading XGBoost model into Booster...
+Model loaded.
+Booster reports num_features=13
+Feature count mismatch: X_sample has 446, model expects 13. Padding with zeros.
+After padding/truncation, X_used shape: (47, 13)
+Building TreeExplainer (this may take a moment)...
+Explainer built. Computing SHAP values...
+Computed SHAP values. shape: (47, 13)
+Rendering beeswarm to /Users/grantsuchecki/Desktop/Desktop/Essentials/NotreDame/Personal Python/Formula1/artifacts/shap_tuned_beeswarm.png
+Saved beeswarm PNG.
+Saving force plot to /Users/grantsuchecki/Desktop/Desktop/Essentials/NotreDame/Personal Python/Formula1/artifacts/shap_tuned_force.html
+Failed to produce/save force plot: Length of features is not equal to the length of shap_values!
+SHAP TreeExplainer run completed successfully (or with recoverable plot errors).
+Starting SHAP TreeExplainer run...
+Using model: /Users/grantsuchecki/Desktop/Desktop/Essentials/NotreDame/Personal Python/Formula1/artifacts/xgb_model_tuned_conservative.json
+Loading X_val from /Users/grantsuchecki/Desktop/Desktop/Essentials/NotreDame/Personal Python/Formula1/artifacts/X_val.csv
+X_val shape: (479, 446)
+Sample size for SHAP: 47
+Loading XGBoost model into Booster...
+Model loaded.
+Booster reports num_features=13
+Feature count mismatch: X_sample has 446, model expects 13. Padding with zeros.
+After padding/truncation, X_used shape: (47, 13)
+Building TreeExplainer (this may take a moment)...
+Explainer built. Computing SHAP values...
+Computed SHAP values. shape: (47, 13)
+Rendering beeswarm to /Users/grantsuchecki/Desktop/Desktop/Essentials/NotreDame/Personal Python/Formula1/artifacts/shap_tuned_beeswarm.png
+Saved beeswarm PNG.
+Saving force plot to /Users/grantsuchecki/Desktop/Desktop/Essentials/NotreDame/Personal Python/Formula1/artifacts/shap_tuned_force.html
+Saved force HTML.
+SHAP TreeExplainer run completed successfully (or with recoverable plot errors).
+Starting SHAP TreeExplainer run...
+Using model: /Users/grantsuchecki/Desktop/Desktop/Essentials/NotreDame/Personal Python/Formula1/artifacts/xgb_model_tuned_conservative.json
+Loading X_val from /Users/grantsuchecki/Desktop/Desktop/Essentials/NotreDame/Personal Python/Formula1/artifacts/X_val.csv
+X_val shape: (479, 446)
+Sample size for SHAP: 47
+Loading XGBoost model into Booster...
+Model loaded.
+Booster reports num_features=13
+Feature count mismatch: X_sample has 446, model expects 13. Padding with zeros.
+After padding/truncation, X_used shape: (47, 13)
+Building TreeExplainer (this may take a moment)...
+Explainer built. Computing SHAP values...
+Computed SHAP values with DataFrame. shape: (47, 13)
+Rendering beeswarm to /Users/grantsuchecki/Desktop/Desktop/Essentials/NotreDame/Personal Python/Formula1/artifacts/shap_tuned_beeswarm.png
+Saved beeswarm PNG.
+Saving force plot to /Users/grantsuchecki/Desktop/Desktop/Essentials/NotreDame/Personal Python/Formula1/artifacts/shap_tuned_force.html
+Saved force HTML.
+SHAP TreeExplainer run completed successfully (or with recoverable plot errors).
+Starting SHAP TreeExplainer run...
+Using model: /Users/grantsuchecki/Desktop/Desktop/Essentials/NotreDame/Personal Python/Formula1/artifacts/xgb_model_tuned_conservative.json
+Loading X_val from /Users/grantsuchecki/Desktop/Desktop/Essentials/NotreDame/Personal Python/Formula1/artifacts/X_val.csv
+Dropping 'Position' column from X_val to avoid leakage into explanations.
+X_val shape: (479, 445)
+Sample size for SHAP: 47
+Loading XGBoost model into Booster...
+Model loaded.
+Booster reports num_features=13
+Feature count mismatch: X_sample has 445, model expects 13. Padding with zeros.
+After padding/truncation, X_used shape: (47, 13)
+Building TreeExplainer (this may take a moment)...
+Explainer built. Computing SHAP values...
+Computed SHAP values with DataFrame. shape: (47, 13)
+Rendering beeswarm to /Users/grantsuchecki/Desktop/Desktop/Essentials/NotreDame/Personal Python/Formula1/artifacts/shap_tuned_beeswarm.png
+Saved beeswarm PNG.
+Saving force plot to /Users/grantsuchecki/Desktop/Desktop/Essentials/NotreDame/Personal Python/Formula1/artifacts/shap_tuned_force.html
+Saved force HTML.
+SHAP TreeExplainer run completed successfully (or with recoverable plot errors).
+Starting SHAP TreeExplainer run...
+Using model: /Users/grantsuchecki/Desktop/Desktop/Essentials/NotreDame/Personal Python/Formula1/artifacts/xgb_model_tuned_conservative.json
+Loading X_val from /Users/grantsuchecki/Desktop/Desktop/Essentials/NotreDame/Personal Python/Formula1/artifacts/X_val.csv
+Dropping columns from X_val to avoid leakage into explanations: ['Position', 'DriverNumber']
+X_val shape: (479, 444)
+Sample size for SHAP: 47
+Loading XGBoost model into Booster...
+Model loaded.
+Booster reports num_features=13
+Feature count mismatch: X_sample has 444, model expects 13. Padding with zeros.
+After padding/truncation, X_used shape: (47, 13)
+Building TreeExplainer (this may take a moment)...
+Explainer built. Computing SHAP values...
+Computed SHAP values with DataFrame. shape: (47, 13)
+Rendering beeswarm to /Users/grantsuchecki/Desktop/Desktop/Essentials/NotreDame/Personal Python/Formula1/artifacts/shap_tuned_beeswarm.png
+Saved beeswarm PNG.
+Saving force plot to /Users/grantsuchecki/Desktop/Desktop/Essentials/NotreDame/Personal Python/Formula1/artifacts/shap_tuned_force.html
+Saved force HTML.
+SHAP TreeExplainer run completed successfully (or with recoverable plot errors).

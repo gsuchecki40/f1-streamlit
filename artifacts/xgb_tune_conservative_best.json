@@ -1,0 +1,1 @@
+{"rmse_val": 24.292092293720223, "params": {"objective": "reg:squarederror", "eval_metric": "rmse", "learning_rate": 0.01, "max_depth": 3, "subsample": 0.8, "colsample_bytree": 0.7, "seed": 42}}

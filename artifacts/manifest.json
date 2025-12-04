@@ -1,0 +1,809 @@
+{
+  "generated_at": 1759177824.080477,
+  "items": {
+    "histgb_deviation_model.joblib": {
+      "path": "/Users/grantsuchecki/Desktop/Desktop/Essentials/NotreDame/Personal Python/Formula1/artifacts/histgb_deviation_model.joblib",
+      "mtime": 1758934251.3647766,
+      "size": 418560,
+      "sha256": "8c49cf5ad9ee61232f2e9fa6d1277556b40162c344d053d6373b1a747558464d"
+    },
+    "linear_calibration_remove_lapped.joblib": {
+      "path": "/Users/grantsuchecki/Desktop/Desktop/Essentials/NotreDame/Personal Python/Formula1/artifacts/linear_calibration_remove_lapped.joblib",
+      "mtime": 1759175310.0353935,
+      "size": 553,
+      "sha256": "505aa2b6f5023b878af9ab05d3f2d13fcd9c4ce1b36738491a77883f63916dfd"
+    },
+    "preprocessing_pipeline.joblib": {
+      "path": "/Users/grantsuchecki/Desktop/Desktop/Essentials/NotreDame/Personal Python/Formula1/artifacts/preprocessing_pipeline.joblib",
+      "mtime": 1759176640.418689,
+      "size": 7793,
+      "sha256": "df6b06ab53cc342bb16efd1e76b77a28afa84a522d8a03851db57c27b25e072c"
+    },
+    "preprocessing_pipeline_resaved.joblib": {
+      "path": "/Users/grantsuchecki/Desktop/Desktop/Essentials/NotreDame/Personal Python/Formula1/artifacts/preprocessing_pipeline_resaved.joblib",
+      "mtime": 1759176397.0747757,
+      "size": 8255,
+      "sha256": "d1c4c1da076cb0dfedf1e8afd63adf488a0abc7f98acc2dad8f6f9fbb67d4ebe"
+    },
+    "xgb_best_external.joblib": {
+      "path": "/Users/grantsuchecki/Desktop/Desktop/Essentials/NotreDame/Personal Python/Formula1/artifacts/xgb_best_external.joblib",
+      "mtime": 1759082078.9101403,
+      "size": 672288,
+      "sha256": "46dba87fd7e38336a6f19b6f70829df19d2e17ee357569b2ae9fcbd10f11b9b1"
+    },
+    "xgb_best_with_pipeline.joblib": {
+      "path": "/Users/grantsuchecki/Desktop/Desktop/Essentials/NotreDame/Personal Python/Formula1/artifacts/xgb_best_with_pipeline.joblib",
+      "mtime": 1759083069.9323037,
+      "size": 115342,
+      "sha256": "533045df66c63c5ad9591583fed2e48bd219d2d95aed9b1b405792eb7d45bff0"
+    },
+    "xgb_conservative_quick.joblib": {
+      "path": "/Users/grantsuchecki/Desktop/Desktop/Essentials/NotreDame/Personal Python/Formula1/artifacts/xgb_conservative_quick.joblib",
+      "mtime": 1759173518.1867032,
+      "size": 134949,
+      "sha256": "c5935d98315c6ac52310857532a9669097ca341ce66e8a4e96c48c8a6c8a7dfa"
+    },
+    "xgb_minimal.joblib": {
+      "path": "/Users/grantsuchecki/Desktop/Desktop/Essentials/NotreDame/Personal Python/Formula1/artifacts/xgb_minimal.joblib",
+      "mtime": 1759172831.8632445,
+      "size": 95494,
+      "sha256": "502387edc1b65dcc7f7d46b66999ba57ff33f2ee2778d7ac977c6530c9a1f2f2"
+    },
+    "xgb_minimal_cv.joblib": {
+      "path": "/Users/grantsuchecki/Desktop/Desktop/Essentials/NotreDame/Personal Python/Formula1/artifacts/xgb_minimal_cv.joblib",
+      "mtime": 1759173867.4163005,
+      "size": 80146,
+      "sha256": "5e42257f2d898a9da3be1bdc5337c6879dd781f935118b8aa62ec2d1589df433"
+    },
+    "xgb_minimal_cv_randomized.joblib": {
+      "path": "/Users/grantsuchecki/Desktop/Desktop/Essentials/NotreDame/Personal Python/Formula1/artifacts/xgb_minimal_cv_randomized.joblib",
+      "mtime": 1759174327.6377854,
+      "size": 353254,
+      "sha256": "561777884cbff9f2112260ef2720301497d2c2528a3f8a558ee6e6913861c534"
+    },
+    "xgb_remove_lapped.joblib": {
+      "path": "/Users/grantsuchecki/Desktop/Desktop/Essentials/NotreDame/Personal Python/Formula1/artifacts/xgb_remove_lapped.joblib",
+      "mtime": 1759175235.3985868,
+      "size": 235919,
+      "sha256": "0e1f96fe31e292ffdcefbfadddc22a045866442b1cdf36018df5fc6e4872d9c0"
+    },
+    "X_test.csv": {
+      "path": "/Users/grantsuchecki/Desktop/Desktop/Essentials/NotreDame/Personal Python/Formula1/artifacts/X_test.csv",
+      "mtime": 1759176640.4171965,
+      "size": 280775,
+      "sha256": "cef94a30dededc7a6c3f9599f184a290877420aecf6a77e80a0ac5200b1fd8c2"
+    },
+    "X_train.csv": {
+      "path": "/Users/grantsuchecki/Desktop/Desktop/Essentials/NotreDame/Personal Python/Formula1/artifacts/X_train.csv",
+      "mtime": 1759176640.3974853,
+      "size": 386430,
+      "sha256": "25265826b5a7ab936c95f37b59c8ad73b1d23f79004598760de4592e6ba2ffe5"
+    },
+    "X_val.csv": {
+      "path": "/Users/grantsuchecki/Desktop/Desktop/Essentials/NotreDame/Personal Python/Formula1/artifacts/X_val.csv",
+      "mtime": 1759176640.4093122,
+      "size": 420192,
+      "sha256": "4ad7ba0574414c54cca42180e5ae1191c6b61c870270c486067b620ce98a99ad"
+    },
+    "cluster_elbow_metrics.csv": {
+      "path": "/Users/grantsuchecki/Desktop/Desktop/Essentials/NotreDame/Personal Python/Formula1/artifacts/cluster_elbow_metrics.csv",
+      "mtime": 1759082622.654699,
+      "size": 380,
+      "sha256": "536fa9c1683f1fc6d20e68b2909e3a505dc882c018eb79779e8904ac5c5ee5a1"
+    },
+    "cluster_readable_summary.csv": {
+      "path": "/Users/grantsuchecki/Desktop/Desktop/Essentials/NotreDame/Personal Python/Formula1/artifacts/cluster_readable_summary.csv",
+      "mtime": 1759082596.5730898,
+      "size": 716,
+      "sha256": "e8a9500eeb1f172d3f26901027cd651d3bdd039659c268ac148b5b4cde5f5fea"
+    },
+    "cluster_summary.csv": {
+      "path": "/Users/grantsuchecki/Desktop/Desktop/Essentials/NotreDame/Personal Python/Formula1/artifacts/cluster_summary.csv",
+      "mtime": 1759082446.7290053,
+      "size": 1499,
+      "sha256": "6d323afcb51ebdd875820ffd40db37d9b05ecf2c59c8545339d7ddf564df323b"
+    },
+    "confusion_residuals_ensemble_test.csv": {
+      "path": "/Users/grantsuchecki/Desktop/Desktop/Essentials/NotreDame/Personal Python/Formula1/artifacts/confusion_residuals_ensemble_test.csv",
+      "mtime": 1759174616.0586114,
+      "size": 58,
+      "sha256": "fc423e44179cc4b3590789dace3fb0d0773f0356f4048805147e6af7cc81ddf7"
+    },
+    "confusion_residuals_ensemble_val.csv": {
+      "path": "/Users/grantsuchecki/Desktop/Desktop/Essentials/NotreDame/Personal Python/Formula1/artifacts/confusion_residuals_ensemble_val.csv",
+      "mtime": 1759174615.9021802,
+      "size": 59,
+      "sha256": "6d198d8c2470b11e23461db00919a0d7ad3063d0bf61a689f8c4f38cd256d7a7"
+    },
+    "confusion_residuals_randomized_cv.csv": {
+      "path": "/Users/grantsuchecki/Desktop/Desktop/Essentials/NotreDame/Personal Python/Formula1/artifacts/confusion_residuals_randomized_cv.csv",
+      "mtime": 1759174613.756876,
+      "size": 59,
+      "sha256": "60a824ddda44b911819b0284cdd09c6d28fcabb4bed5a03313bc54cc69bc802d"
+    },
+    "confusion_residuals_randomized_cv_test.csv": {
+      "path": "/Users/grantsuchecki/Desktop/Desktop/Essentials/NotreDame/Personal Python/Formula1/artifacts/confusion_residuals_randomized_cv_test.csv",
+      "mtime": 1759174613.9335706,
+      "size": 58,
+      "sha256": "abac62c9dbfddb71dafd27fdcb25846aacdeeea5f281928c0539c0687e89b968"
+    },
+    "metrics_ensemble_calibrated.csv": {
+      "path": "/Users/grantsuchecki/Desktop/Desktop/Essentials/NotreDame/Personal Python/Formula1/artifacts/metrics_ensemble_calibrated.csv",
+      "mtime": 1759174616.1139362,
+      "size": 75,
+      "sha256": "c18c4c9751dfd5475317622c7b8d42e48459516753f0d1d35114d00f2fa237b3"
+    },
+    "metrics_ensemble_test.csv": {
+      "path": "/Users/grantsuchecki/Desktop/Desktop/Essentials/NotreDame/Personal Python/Formula1/artifacts/metrics_ensemble_test.csv",
+      "mtime": 1759174615.9537435,
+      "size": 75,
+      "sha256": "f7a1399386a82110951b08a2bdf7940de1dec510020276d65aeb5b007be6d6aa"
+    },
+    "metrics_ensemble_val.csv": {
+      "path": "/Users/grantsuchecki/Desktop/Desktop/Essentials/NotreDame/Personal Python/Formula1/artifacts/metrics_ensemble_val.csv",
+      "mtime": 1759174615.7873797,
+      "size": 75,
+      "sha256": "69645f20367c4a84089b46b230acac387b981438715b31c5069df111da4f0b47"
+    },
+    "metrics_oof.csv": {
+      "path": "/Users/grantsuchecki/Desktop/Desktop/Essentials/NotreDame/Personal Python/Formula1/artifacts/metrics_oof.csv",
+      "mtime": 1759174615.770324,
+      "size": 74,
+      "sha256": "54f09e7242b5cc7435af9e7fb46aa907413cb13af85845ac6f58a3c2d62820d6"
+    },
+    "metrics_randomized_cv.csv": {
+      "path": "/Users/grantsuchecki/Desktop/Desktop/Essentials/NotreDame/Personal Python/Formula1/artifacts/metrics_randomized_cv.csv",
+      "mtime": 1759174613.5120902,
+      "size": 74,
+      "sha256": "ab9774adf356fbaaf234f859b265ab2d2bd51c14af75bfb773eb42d3acb2d2f6"
+    },
+    "metrics_randomized_cv_test.csv": {
+      "path": "/Users/grantsuchecki/Desktop/Desktop/Essentials/NotreDame/Personal Python/Formula1/artifacts/metrics_randomized_cv_test.csv",
+      "mtime": 1759174613.8132734,
+      "size": 74,
+      "sha256": "76db9a32d6a514923f5bdfea79e460fd091fb8351d738f3beccaf325924edf8e"
+    },
+    "metrics_remove_lapped_oof.csv": {
+      "path": "/Users/grantsuchecki/Desktop/Desktop/Essentials/NotreDame/Personal Python/Formula1/artifacts/metrics_remove_lapped_oof.csv",
+      "mtime": 1759175310.0377507,
+      "size": 75,
+      "sha256": "2613e5631abab1fc12b69733906fb71e9809d9331a6dfe10c123da004ad1164e"
+    },
+    "metrics_remove_lapped_test.csv": {
+      "path": "/Users/grantsuchecki/Desktop/Desktop/Essentials/NotreDame/Personal Python/Formula1/artifacts/metrics_remove_lapped_test.csv",
+      "mtime": 1759175235.4037378,
+      "size": 74,
+      "sha256": "3eaf5e5b3ed2c9cf3ab8953981121bc79ae3220b2c96b1b0f37c096770104308"
+    },
+    "metrics_remove_lapped_test_ensemble.csv": {
+      "path": "/Users/grantsuchecki/Desktop/Desktop/Essentials/NotreDame/Personal Python/Formula1/artifacts/metrics_remove_lapped_test_ensemble.csv",
+      "mtime": 1759175310.038292,
+      "size": 75,
+      "sha256": "b5f45f30a4dbae13cd4a61b23346f5cea880cc79e8711e4970317eeb0f0db540"
+    },
+    "metrics_remove_lapped_test_ensemble_calibrated.csv": {
+      "path": "/Users/grantsuchecki/Desktop/Desktop/Essentials/NotreDame/Personal Python/Formula1/artifacts/metrics_remove_lapped_test_ensemble_calibrated.csv",
+      "mtime": 1759175310.0385196,
+      "size": 75,
+      "sha256": "7072d4f32190aa82bab566a63b9a8a02afc0590b6afe5ecd880181c6acb0f02a"
+    },
+    "metrics_remove_lapped_val.csv": {
+      "path": "/Users/grantsuchecki/Desktop/Desktop/Essentials/NotreDame/Personal Python/Formula1/artifacts/metrics_remove_lapped_val.csv",
+      "mtime": 1759175235.402532,
+      "size": 74,
+      "sha256": "cb4d172d4bea962364b701b996e05ea8c6a5e78efabd845cc0dcdd26e6cca5cd"
+    },
+    "metrics_remove_lapped_val_ensemble.csv": {
+      "path": "/Users/grantsuchecki/Desktop/Desktop/Essentials/NotreDame/Personal Python/Formula1/artifacts/metrics_remove_lapped_val_ensemble.csv",
+      "mtime": 1759175310.0380523,
+      "size": 75,
+      "sha256": "bbc486509bebc7b4d65c169af3f2c0877743c188a3939f3a44861fdd19ebf16c"
+    },
+    "metrics_scored_from_raw_calibrated.csv": {
+      "path": "/Users/grantsuchecki/Desktop/Desktop/Essentials/NotreDame/Personal Python/Formula1/artifacts/metrics_scored_from_raw_calibrated.csv",
+      "mtime": 1759177824.007107,
+      "size": 111,
+      "sha256": "4fb8cd61073c2e4d81e72a635d8f2c7f3ec1ca0395f8b56789dd729842fd9098"
+    },
+    "metrics_scored_from_raw_uncalibrated.csv": {
+      "path": "/Users/grantsuchecki/Desktop/Desktop/Essentials/NotreDame/Personal Python/Formula1/artifacts/metrics_scored_from_raw_uncalibrated.csv",
+      "mtime": 1759177824.0068374,
+      "size": 113,
+      "sha256": "22809b3e8d26a70d518463d2a05223fc4d336b6b29315cded8624de033449be7"
+    },
+    "model_comparison_metrics.csv": {
+      "path": "/Users/grantsuchecki/Desktop/Desktop/Essentials/NotreDame/Personal Python/Formula1/artifacts/model_comparison_metrics.csv",
+      "mtime": 1759173558.847891,
+      "size": 573,
+      "sha256": "d66609cc0a04e1c454b6da18c90bcdc94c753ff4051063319d03d32806ab28df"
+    },
+    "oof_preds.csv": {
+      "path": "/Users/grantsuchecki/Desktop/Desktop/Essentials/NotreDame/Personal Python/Formula1/artifacts/oof_preds.csv",
+      "mtime": 1759174615.7695374,
+      "size": 11381,
+      "sha256": "ebc17a80fc38d50efca57414e53c090b593b7cf48cbef79fde5a907890e6f0e1"
+    },
+    "oof_preds_remove_lapped.csv": {
+      "path": "/Users/grantsuchecki/Desktop/Desktop/Essentials/NotreDame/Personal Python/Formula1/artifacts/oof_preds_remove_lapped.csv",
+      "mtime": 1759175310.0338998,
+      "size": 9346,
+      "sha256": "f1f8815c38cfa986f565d36231b87f77a3f8430c3ed35baec2d8b74a7f12e4be"
+    },
+    "premodel_canonical.csv": {
+      "path": "/Users/grantsuchecki/Desktop/Desktop/Essentials/NotreDame/Personal Python/Formula1/artifacts/premodel_canonical.csv",
+      "mtime": 1759155914.058895,
+      "size": 601201,
+      "sha256": "daf9d910839b385b65de6a5cb98cd8d5dd00e24d1bc90fcf9bb94bd820baf763"
+    },
+    "premodel_clusters.csv": {
+      "path": "/Users/grantsuchecki/Desktop/Desktop/Essentials/NotreDame/Personal Python/Formula1/artifacts/premodel_clusters.csv",
+      "mtime": 1759155914.0754254,
+      "size": 606557,
+      "sha256": "834314e231639972cccf90c88031cfe70db8f14cb93ead3719227b16ff11fd34"
+    },
+    "premodel_mapped.csv": {
+      "path": "/Users/grantsuchecki/Desktop/Desktop/Essentials/NotreDame/Personal Python/Formula1/artifacts/premodel_mapped.csv",
+      "mtime": 1759155914.0428114,
+      "size": 598704,
+      "sha256": "ed92f4ef42720bc345340b702aa9e085ec07a62f7a938208ec8c6f61340ce1d7"
+    },
+    "race_times_by_weather_cluster_summary.csv": {
+      "path": "/Users/grantsuchecki/Desktop/Desktop/Essentials/NotreDame/Personal Python/Formula1/artifacts/race_times_by_weather_cluster_summary.csv",
+      "mtime": 1759155705.2773075,
+      "size": 428,
+      "sha256": "cd451f42b90eb573828e241859bb2271b0cfa70957574b609c218246832ca0a5"
+    },
+    "randomized_cv_trials.csv": {
+      "path": "/Users/grantsuchecki/Desktop/Desktop/Essentials/NotreDame/Personal Python/Formula1/artifacts/randomized_cv_trials.csv",
+      "mtime": 1759174327.321434,
+      "size": 2422,
+      "sha256": "1714b4415d011deb5688731ccde8fc5b3a267b531eda875c421439505131d90c"
+    },
+    "scored_demo.csv": {
+      "path": "/Users/grantsuchecki/Desktop/Desktop/Essentials/NotreDame/Personal Python/Formula1/artifacts/scored_demo.csv",
+      "mtime": 1759177824.005102,
+      "size": 75,
+      "sha256": "b5236cc0ea83868b5600826abd741cc57bfea858fafd058e78150c0f94f3fd6b"
+    },
+    "scored_preds_from_raw.csv": {
+      "path": "/Users/grantsuchecki/Desktop/Desktop/Essentials/NotreDame/Personal Python/Formula1/artifacts/scored_preds_from_raw.csv",
+      "mtime": 1759177162.4546394,
+      "size": 13856,
+      "sha256": "7fdc7a12546463eaca7918d436ba6200a015002a045475fe12a370eb0a5028ca"
+    },
+    "scored_preds_from_raw_uncalibrated.csv": {
+      "path": "/Users/grantsuchecki/Desktop/Desktop/Essentials/NotreDame/Personal Python/Formula1/artifacts/scored_preds_from_raw_uncalibrated.csv",
+      "mtime": 1759177824.0047355,
+      "size": 75,
+      "sha256": "b5236cc0ea83868b5600826abd741cc57bfea858fafd058e78150c0f94f3fd6b"
+    },
+    "shap_ensemble_summary.csv": {
+      "path": "/Users/grantsuchecki/Desktop/Desktop/Essentials/NotreDame/Personal Python/Formula1/artifacts/shap_ensemble_summary.csv",
+      "mtime": 1759174616.1144507,
+      "size": 248,
+      "sha256": "b2dd196497f54ec5b832daeea4042daed98e0d32115ecf5748d3f0c7cbb0e19c"
+    },
+    "shap_minimal_cv_randomized_summary.csv": {
+      "path": "/Users/grantsuchecki/Desktop/Desktop/Essentials/NotreDame/Personal Python/Formula1/artifacts/shap_minimal_cv_randomized_summary.csv",
+      "mtime": 1759174327.6597476,
+      "size": 249,
+      "sha256": "c6ddc038bd2a96f045c96c160d66faf8ae192a4ce0ba95ea11fd9a571d1bbba2"
+    },
+    "shap_minimal_cv_summary.csv": {
+      "path": "/Users/grantsuchecki/Desktop/Desktop/Essentials/NotreDame/Personal Python/Formula1/artifacts/shap_minimal_cv_summary.csv",
+      "mtime": 1759173867.4247892,
+      "size": 222,
+      "sha256": "88238abef8d415050ea443ecfd827a161d0f2c6947bcb57e2d00a076d25c6f1e"
+    },
+    "shap_minimal_summary.csv": {
+      "path": "/Users/grantsuchecki/Desktop/Desktop/Essentials/NotreDame/Personal Python/Formula1/artifacts/shap_minimal_summary.csv",
+      "mtime": 1759172831.8689747,
+      "size": 231,
+      "sha256": "85149ca186476a1063168b5bf7ceca3cd92713922dcf72807c8e76bd79b55ff6"
+    },
+    "shap_remove_lapped_ensemble_summary.csv": {
+      "path": "/Users/grantsuchecki/Desktop/Desktop/Essentials/NotreDame/Personal Python/Formula1/artifacts/shap_remove_lapped_ensemble_summary.csv",
+      "mtime": 1759175310.1499429,
+      "size": 252,
+      "sha256": "93ef5d8117783fa15f93e824b9ee12b0f48cc92c19a97be9dead93d027c20163"
+    },
+    "shap_remove_lapped_summary.csv": {
+      "path": "/Users/grantsuchecki/Desktop/Desktop/Essentials/NotreDame/Personal Python/Formula1/artifacts/shap_remove_lapped_summary.csv",
+      "mtime": 1759175235.4161444,
+      "size": 245,
+      "sha256": "000f24692d10279fb697d560d5c19fca9deb0a85ce8711194c99e926cdb82ae2"
+    },
+    "shap_summary_val_xgb_tuned_conservative.csv": {
+      "path": "/Users/grantsuchecki/Desktop/Desktop/Essentials/NotreDame/Personal Python/Formula1/artifacts/shap_summary_val_xgb_tuned_conservative.csv",
+      "mtime": 1759024719.95001,
+      "size": 304,
+      "sha256": "091c4ff8194beb1bd5298b5ce87bca2c16d8083df45ce177456be41335b6314f"
+    },
+    "shap_summary_val_xgb_untitled_external.csv": {
+      "path": "/Users/grantsuchecki/Desktop/Desktop/Essentials/NotreDame/Personal Python/Formula1/artifacts/shap_summary_val_xgb_untitled_external.csv",
+      "mtime": 1759024327.0517578,
+      "size": 300,
+      "sha256": "f0aaddbfb0a74eb8804c71d92bc4bea64a2811f7d5690a2218460a0a6a7ff60e"
+    },
+    "shap_test_xgb_tuned_conservative.csv": {
+      "path": "/Users/grantsuchecki/Desktop/Desktop/Essentials/NotreDame/Personal Python/Formula1/artifacts/shap_test_xgb_tuned_conservative.csv",
+      "mtime": 1759024719.9497592,
+      "size": 43686,
+      "sha256": "a400e5f34b5934119043c29ef1bf010b74f07c8f88cf2887fa3dba312cf6f2cc"
+    },
+    "shap_test_xgb_untitled_external.csv": {
+      "path": "/Users/grantsuchecki/Desktop/Desktop/Essentials/NotreDame/Personal Python/Formula1/artifacts/shap_test_xgb_untitled_external.csv",
+      "mtime": 1759024327.0513399,
+      "size": 42538,
+      "sha256": "9d884682e843b7287148747411fba6349b304b1db56a62a29a9bf250470b7237"
+    },
+    "shap_val_with_pipeline.csv": {
+      "path": "/Users/grantsuchecki/Desktop/Desktop/Essentials/NotreDame/Personal Python/Formula1/artifacts/shap_val_with_pipeline.csv",
+      "mtime": 1759083069.9521494,
+      "size": 305807,
+      "sha256": "32ba48f24e9c6d89b2a8e7961d37ba8e592351a62a93423fc63d9e722fd1fb96"
+    },
+    "shap_val_xgb_tuned_conservative.csv": {
+      "path": "/Users/grantsuchecki/Desktop/Desktop/Essentials/NotreDame/Personal Python/Formula1/artifacts/shap_val_xgb_tuned_conservative.csv",
+      "mtime": 1759024719.9484162,
+      "size": 66730,
+      "sha256": "af13bbcb61d544b1d9096b86b72f066c80c8fec9bac26877111e7ee859704a48"
+    },
+    "shap_val_xgb_untitled_external.csv": {
+      "path": "/Users/grantsuchecki/Desktop/Desktop/Essentials/NotreDame/Personal Python/Formula1/artifacts/shap_val_xgb_untitled_external.csv",
+      "mtime": 1759024327.049722,
+      "size": 65046,
+      "sha256": "016157816f30e8aee3a77b6d828c5d98773cdc7bd35fcf69681eb1a8be2ee575"
+    },
+    "shap_with_rain_summary.csv": {
+      "path": "/Users/grantsuchecki/Desktop/Desktop/Essentials/NotreDame/Personal Python/Formula1/artifacts/shap_with_rain_summary.csv",
+      "mtime": 1759172352.249413,
+      "size": 451,
+      "sha256": "95761fa5af13efeedcf626b57c091be49c1650337003fdde8ab955a01edca847"
+    },
+    "test_avg_preds_ensemble.csv": {
+      "path": "/Users/grantsuchecki/Desktop/Desktop/Essentials/NotreDame/Personal Python/Formula1/artifacts/test_avg_preds_ensemble.csv",
+      "mtime": 1759174615.7866764,
+      "size": 5948,
+      "sha256": "89fe23ca1e8862b3df058c8bf84b433136046905f29b2eb60ae68e2c6491ae2d"
+    },
+    "test_avg_preds_ensemble_calibrated.csv": {
+      "path": "/Users/grantsuchecki/Desktop/Desktop/Essentials/NotreDame/Personal Python/Formula1/artifacts/test_avg_preds_ensemble_calibrated.csv",
+      "mtime": 1759174616.1128724,
+      "size": 8714,
+      "sha256": "aae73ea3e6cfad44c09885f5464bf3b1215b496daf0b4763e9c1c7051e006d21"
+    },
+    "test_avg_preds_remove_lapped.csv": {
+      "path": "/Users/grantsuchecki/Desktop/Desktop/Essentials/NotreDame/Personal Python/Formula1/artifacts/test_avg_preds_remove_lapped.csv",
+      "mtime": 1759175310.0347905,
+      "size": 4643,
+      "sha256": "7c9364151525ebbaf622f8cae856181a502abeed470db346e191ca26549d9db0"
+    },
+    "test_avg_preds_remove_lapped_calibrated.csv": {
+      "path": "/Users/grantsuchecki/Desktop/Desktop/Essentials/NotreDame/Personal Python/Formula1/artifacts/test_avg_preds_remove_lapped_calibrated.csv",
+      "mtime": 1759175310.0358193,
+      "size": 4653,
+      "sha256": "c91d5ca067e6e5cccfb5f40f102ee2c4b801a088de83da5d57624eed8479ea71"
+    },
+    "test_predictions_histgb.csv": {
+      "path": "/Users/grantsuchecki/Desktop/Desktop/Essentials/NotreDame/Personal Python/Formula1/artifacts/test_predictions_histgb.csv",
+      "mtime": 1758934251.3676105,
+      "size": 8421,
+      "sha256": "f58b49db76e3ff2b01a48ce0270a80dc82590ca34b7a5c9577adc4203bca1c44"
+    },
+    "test_predictions_xgb_external.csv": {
+      "path": "/Users/grantsuchecki/Desktop/Desktop/Essentials/NotreDame/Personal Python/Formula1/artifacts/test_predictions_xgb_external.csv",
+      "mtime": 1759023758.9005783,
+      "size": 5993,
+      "sha256": "782319c3056b8c792685cfaf5ebfa020d67fcdc4a3f94eacd4ee474d06cc84d1"
+    },
+    "test_predictions_xgb_minimal_cv_randomized.csv": {
+      "path": "/Users/grantsuchecki/Desktop/Desktop/Essentials/NotreDame/Personal Python/Formula1/artifacts/test_predictions_xgb_minimal_cv_randomized.csv",
+      "mtime": 1759174327.6404033,
+      "size": 5942,
+      "sha256": "c941c4359a4717f0211b96203a39f0857edc7677f3ed18ebe4e9f8c2cc49d1d8"
+    },
+    "test_predictions_xgb_remove_lapped.csv": {
+      "path": "/Users/grantsuchecki/Desktop/Desktop/Essentials/NotreDame/Personal Python/Formula1/artifacts/test_predictions_xgb_remove_lapped.csv",
+      "mtime": 1759175235.401238,
+      "size": 4650,
+      "sha256": "548273aea5d880c288dd5d66dc274e9b3db8ccc6ca27680da384552c9e59de35"
+    },
+    "test_predictions_xgb_tuned_conservative.csv": {
+      "path": "/Users/grantsuchecki/Desktop/Desktop/Essentials/NotreDame/Personal Python/Formula1/artifacts/test_predictions_xgb_tuned_conservative.csv",
+      "mtime": 1759024719.9394116,
+      "size": 5943,
+      "sha256": "bee6ba086a218881ee56efd11f78af74a14a2145e2a3b77948af2d825606b3df"
+    },
+    "test_predictions_xgb_untitled_external.csv": {
+      "path": "/Users/grantsuchecki/Desktop/Desktop/Essentials/NotreDame/Personal Python/Formula1/artifacts/test_predictions_xgb_untitled_external.csv",
+      "mtime": 1759024327.0358818,
+      "size": 5993,
+      "sha256": "782319c3056b8c792685cfaf5ebfa020d67fcdc4a3f94eacd4ee474d06cc84d1"
+    },
+    "val_avg_preds_ensemble.csv": {
+      "path": "/Users/grantsuchecki/Desktop/Desktop/Essentials/NotreDame/Personal Python/Formula1/artifacts/val_avg_preds_ensemble.csv",
+      "mtime": 1759174615.786184,
+      "size": 9111,
+      "sha256": "0e6b54769aedb5aa02ac824c693055f2c01b10f43978bd4906d6929d8fe20d2f"
+    },
+    "val_avg_preds_remove_lapped.csv": {
+      "path": "/Users/grantsuchecki/Desktop/Desktop/Essentials/NotreDame/Personal Python/Formula1/artifacts/val_avg_preds_remove_lapped.csv",
+      "mtime": 1759175310.0344224,
+      "size": 6267,
+      "sha256": "85fd215a270cdc738589bd251b07ec3d426cdc1b8250645573514a5873a54fff"
+    },
+    "val_predictions_histgb.csv": {
+      "path": "/Users/grantsuchecki/Desktop/Desktop/Essentials/NotreDame/Personal Python/Formula1/artifacts/val_predictions_histgb.csv",
+      "mtime": 1758934251.3671033,
+      "size": 12842,
+      "sha256": "7a3e844e3cc0b70509c60719ad2cb11783f3e3dd2fbe16eb892e6dbdbbf4ab29"
+    },
+    "val_predictions_with_pipeline.csv": {
+      "path": "/Users/grantsuchecki/Desktop/Desktop/Essentials/NotreDame/Personal Python/Formula1/artifacts/val_predictions_with_pipeline.csv",
+      "mtime": 1759083069.9349933,
+      "size": 9190,
+      "sha256": "1a2afea6a365e7582a36dc98bbb47325ca60433c825d9668147a38a5258b3abb"
+    },
+    "val_predictions_xgb_conservative_quick.csv": {
+      "path": "/Users/grantsuchecki/Desktop/Desktop/Essentials/NotreDame/Personal Python/Formula1/artifacts/val_predictions_xgb_conservative_quick.csv",
+      "mtime": 1759173518.1880608,
+      "size": 4646,
+      "sha256": "b53bd139d7a61c3ece268e12f9753bbb5f489946d207906cc44ae4a8d50b7947"
+    },
+    "val_predictions_xgb_external.csv": {
+      "path": "/Users/grantsuchecki/Desktop/Desktop/Essentials/NotreDame/Personal Python/Formula1/artifacts/val_predictions_xgb_external.csv",
+      "mtime": 1759023758.899749,
+      "size": 9142,
+      "sha256": "6010214eb25b03150e5e42c5e40340b992ba76b4542ee2f0b2538c08347d6744"
+    },
+    "val_predictions_xgb_minimal_cv_randomized.csv": {
+      "path": "/Users/grantsuchecki/Desktop/Desktop/Essentials/NotreDame/Personal Python/Formula1/artifacts/val_predictions_xgb_minimal_cv_randomized.csv",
+      "mtime": 1759174327.63958,
+      "size": 9131,
+      "sha256": "45bf1023fe50c55756a8de326cca0f18e3a31120238f1f59d31efd1170b12833"
+    },
+    "val_predictions_xgb_remove_lapped.csv": {
+      "path": "/Users/grantsuchecki/Desktop/Desktop/Essentials/NotreDame/Personal Python/Formula1/artifacts/val_predictions_xgb_remove_lapped.csv",
+      "mtime": 1759175235.4001424,
+      "size": 6251,
+      "sha256": "c75a090ad962c7eff61ee8fd13713bd311ebfb36f39d3892408116af5e944dee"
+    },
+    "val_predictions_xgb_tuned_conservative.csv": {
+      "path": "/Users/grantsuchecki/Desktop/Desktop/Essentials/NotreDame/Personal Python/Formula1/artifacts/val_predictions_xgb_tuned_conservative.csv",
+      "mtime": 1759024719.9386792,
+      "size": 9059,
+      "sha256": "e7aba79e655a1847ba4295a6267044f9ea80448ee10eeede1ce69ee1aa3292f8"
+    },
+    "val_predictions_xgb_tuned_external.csv": {
+      "path": "/Users/grantsuchecki/Desktop/Desktop/Essentials/NotreDame/Personal Python/Formula1/artifacts/val_predictions_xgb_tuned_external.csv",
+      "mtime": 1759082078.9120088,
+      "size": 9087,
+      "sha256": "7e93f7a81cf822c545b0f82fa5f4b12c2e586f7c64c2f2773e47543a74025415"
+    },
+    "val_predictions_xgb_untitled_external.csv": {
+      "path": "/Users/grantsuchecki/Desktop/Desktop/Essentials/NotreDame/Personal Python/Formula1/artifacts/val_predictions_xgb_untitled_external.csv",
+      "mtime": 1759024327.0350308,
+      "size": 9142,
+      "sha256": "6010214eb25b03150e5e42c5e40340b992ba76b4542ee2f0b2538c08347d6744"
+    },
+    "xgb_tune_conservative_trials.csv": {
+      "path": "/Users/grantsuchecki/Desktop/Desktop/Essentials/NotreDame/Personal Python/Formula1/artifacts/xgb_tune_conservative_trials.csv",
+      "mtime": 1759024719.9353673,
+      "size": 1390,
+      "sha256": "3d30bdef10a364786f8d5e2e7947808f7dd82fa0978696781f6894e0aed1f404"
+    },
+    "cluster_elbow.png": {
+      "path": "/Users/grantsuchecki/Desktop/Desktop/Essentials/NotreDame/Personal Python/Formula1/artifacts/cluster_elbow.png",
+      "mtime": 1759082622.7538176,
+      "size": 64528,
+      "sha256": "10e9eef52da17eb72887b6865d3e15496c62fbab0f822fa6b6607e4531abfa53"
+    },
+    "cluster_heatmap.png": {
+      "path": "/Users/grantsuchecki/Desktop/Desktop/Essentials/NotreDame/Personal Python/Formula1/artifacts/cluster_heatmap.png",
+      "mtime": 1759173518.5236173,
+      "size": 125092,
+      "sha256": "740e808f781afca8e654245bb5341d3c246894adf7dc43f733dbea8fa93dca52"
+    },
+    "cluster_heatmap_model_features.png": {
+      "path": "/Users/grantsuchecki/Desktop/Desktop/Essentials/NotreDame/Personal Python/Formula1/artifacts/cluster_heatmap_model_features.png",
+      "mtime": 1759173625.961747,
+      "size": 57635,
+      "sha256": "a4cd4c7c47f5ea7e5ae6231c3aa8f0ae008672a2fc94af8385031b871e2b59a7"
+    },
+    "cluster_pca_2d.png": {
+      "path": "/Users/grantsuchecki/Desktop/Desktop/Essentials/NotreDame/Personal Python/Formula1/artifacts/cluster_pca_2d.png",
+      "mtime": 1759082720.3287518,
+      "size": 148617,
+      "sha256": "ffb9a16d7164f5d897affd0e0a83cbe097fc5956d86d4c1a2146e2d04b5b5560"
+    },
+    "confusion_residuals_ensemble_test.png": {
+      "path": "/Users/grantsuchecki/Desktop/Desktop/Essentials/NotreDame/Personal Python/Formula1/artifacts/confusion_residuals_ensemble_test.png",
+      "mtime": 1759174616.1088471,
+      "size": 16848,
+      "sha256": "d19ade14b9f523ddfb00b24b800db896895c351468f410792ea62527add949a0"
+    },
+    "confusion_residuals_ensemble_val.png": {
+      "path": "/Users/grantsuchecki/Desktop/Desktop/Essentials/NotreDame/Personal Python/Formula1/artifacts/confusion_residuals_ensemble_val.png",
+      "mtime": 1759174615.9526098,
+      "size": 17612,
+      "sha256": "71e1f37e753d228d58a9a149631b36b72f75806b75b66ae6ee2fb51c17a50ae6"
+    },
+    "confusion_residuals_quick.png": {
+      "path": "/Users/grantsuchecki/Desktop/Desktop/Essentials/NotreDame/Personal Python/Formula1/artifacts/confusion_residuals_quick.png",
+      "mtime": 1759173518.3624794,
+      "size": 23606,
+      "sha256": "816e71a73ffe7d53911ec2e49a0cd0adf07729c64f35977ea2fcddf8fe82a2dc"
+    },
+    "confusion_residuals_randomized_cv.png": {
+      "path": "/Users/grantsuchecki/Desktop/Desktop/Essentials/NotreDame/Personal Python/Formula1/artifacts/confusion_residuals_randomized_cv.png",
+      "mtime": 1759174613.8119907,
+      "size": 17408,
+      "sha256": "4b7970f428abc45e22b2ceaeb43e3f5b37370178ff4881b505ad0567e19bcc76"
+    },
+    "confusion_residuals_randomized_cv_test.png": {
+      "path": "/Users/grantsuchecki/Desktop/Desktop/Essentials/NotreDame/Personal Python/Formula1/artifacts/confusion_residuals_randomized_cv_test.png",
+      "mtime": 1759174614.013485,
+      "size": 16396,
+      "sha256": "92f191524b08e676b824ce9bb4128a16191c45f59cca7282104d47795711a2e3"
+    },
+    "model_comparison_metrics.png": {
+      "path": "/Users/grantsuchecki/Desktop/Desktop/Essentials/NotreDame/Personal Python/Formula1/artifacts/model_comparison_metrics.png",
+      "mtime": 1759173559.112308,
+      "size": 46960,
+      "sha256": "a37523c6270f9151f177e8f2debfc39034932f430e82b048d8b17b3e7683219b"
+    },
+    "pred_vs_actual_ensemble_test.png": {
+      "path": "/Users/grantsuchecki/Desktop/Desktop/Essentials/NotreDame/Personal Python/Formula1/artifacts/pred_vs_actual_ensemble_test.png",
+      "mtime": 1759174616.0548568,
+      "size": 43217,
+      "sha256": "d01794859e0284b418b899168fe4189fca6b0254c52f6e591eefc0bd9e1d857a"
+    },
+    "pred_vs_actual_ensemble_val.png": {
+      "path": "/Users/grantsuchecki/Desktop/Desktop/Essentials/NotreDame/Personal Python/Formula1/artifacts/pred_vs_actual_ensemble_val.png",
+      "mtime": 1759174615.8988647,
+      "size": 55648,
+      "sha256": "0b359a4651c04e4c3015948bc9ba1429da3b55596692b6f0f2a44904683a5ceb"
+    },
+    "pred_vs_actual_randomized_cv.png": {
+      "path": "/Users/grantsuchecki/Desktop/Desktop/Essentials/NotreDame/Personal Python/Formula1/artifacts/pred_vs_actual_randomized_cv.png",
+      "mtime": 1759174613.7528415,
+      "size": 55036,
+      "sha256": "2e26be6ec350b1d546e218173171b90bd9c1bc6d3830dfc3eddd229be3ee9444"
+    },
+    "pred_vs_actual_randomized_cv_test.png": {
+      "path": "/Users/grantsuchecki/Desktop/Desktop/Essentials/NotreDame/Personal Python/Formula1/artifacts/pred_vs_actual_randomized_cv_test.png",
+      "mtime": 1759174613.9302955,
+      "size": 43739,
+      "sha256": "438b168868cc9079b1fff0c3904ecb226eb06f6d11669a34504a0ec97c8abc1c"
+    },
+    "race_times_by_weather_cluster.png": {
+      "path": "/Users/grantsuchecki/Desktop/Desktop/Essentials/NotreDame/Personal Python/Formula1/artifacts/race_times_by_weather_cluster.png",
+      "mtime": 1759155705.8511271,
+      "size": 51903,
+      "sha256": "ecc29f2434496ccc7012cd04c5769d6fb2a03838736a8bfd943aa5bf56d9223b"
+    },
+    "race_times_by_weather_cluster_pretty.png": {
+      "path": "/Users/grantsuchecki/Desktop/Desktop/Essentials/NotreDame/Personal Python/Formula1/artifacts/race_times_by_weather_cluster_pretty.png",
+      "mtime": 1759155822.341597,
+      "size": 107485,
+      "sha256": "eca3a6950a722f847b9e4e6033f356e36174a873967b9ca859d5cc8139ac4dad"
+    },
+    "residuals_hist_ensemble_test.png": {
+      "path": "/Users/grantsuchecki/Desktop/Desktop/Essentials/NotreDame/Personal Python/Formula1/artifacts/residuals_hist_ensemble_test.png",
+      "mtime": 1759174616.0093331,
+      "size": 22648,
+      "sha256": "6cdd8293b58ad333d098d6c0b184387c10159c620661cca2330d164c836e9c67"
+    },
+    "residuals_hist_ensemble_val.png": {
+      "path": "/Users/grantsuchecki/Desktop/Desktop/Essentials/NotreDame/Personal Python/Formula1/artifacts/residuals_hist_ensemble_val.png",
+      "mtime": 1759174615.8504403,
+      "size": 23598,
+      "sha256": "4d9332292e195238410c4f945abcb755315fb9e3c3e246bbcb8794fe3296f711"
+    },
+    "residuals_hist_randomized_cv.png": {
+      "path": "/Users/grantsuchecki/Desktop/Desktop/Essentials/NotreDame/Personal Python/Formula1/artifacts/residuals_hist_randomized_cv.png",
+      "mtime": 1759174613.701936,
+      "size": 23423,
+      "sha256": "0a2752de901085c5a3d7f1d7142fef7208f7a3956c61f1c699e61428c29de799"
+    },
+    "residuals_hist_randomized_cv_test.png": {
+      "path": "/Users/grantsuchecki/Desktop/Desktop/Essentials/NotreDame/Personal Python/Formula1/artifacts/residuals_hist_randomized_cv_test.png",
+      "mtime": 1759174613.8841302,
+      "size": 25444,
+      "sha256": "1bd3b2cb9679c2f019bed0c79d5191d793d9d3827164168124152b7a5d463db8"
+    },
+    "shap_beeswarm.png": {
+      "path": "/Users/grantsuchecki/Desktop/Desktop/Essentials/NotreDame/Personal Python/Formula1/artifacts/shap_beeswarm.png",
+      "mtime": 1759172352.6223564,
+      "size": 147186,
+      "sha256": "fa2309dd18c09f20b7830c822a993eda1a31fa40f217f8fc6bad0f017a417ad8"
+    },
+    "shap_exact_beeswarm.png": {
+      "path": "/Users/grantsuchecki/Desktop/Desktop/Essentials/NotreDame/Personal Python/Formula1/artifacts/shap_exact_beeswarm.png",
+      "mtime": 1759027697.0814793,
+      "size": 105729,
+      "sha256": "d5fd15ccbaccdb8b9e4d5941aaee7cfc5484cbffee76ca918285e85a3b194c94"
+    },
+    "shap_faithful_beeswarm.png": {
+      "path": "/Users/grantsuchecki/Desktop/Desktop/Essentials/NotreDame/Personal Python/Formula1/artifacts/shap_faithful_beeswarm.png",
+      "mtime": 1759027233.3988209,
+      "size": 106296,
+      "sha256": "ca60aa9554581cb42db25aa6e8ead33048766c02887ce873f74c3cf3e00c98ea"
+    },
+    "shap_global_bar_from_contribs.png": {
+      "path": "/Users/grantsuchecki/Desktop/Desktop/Essentials/NotreDame/Personal Python/Formula1/artifacts/shap_global_bar_from_contribs.png",
+      "mtime": 1759024580.97031,
+      "size": 31886,
+      "sha256": "a3f522392b34d6e2557ca61e7c355519c9ae7eb92685eb7e77067fc43fcfbf6b"
+    },
+    "shap_global_bar_from_contribs_tuned.png": {
+      "path": "/Users/grantsuchecki/Desktop/Desktop/Essentials/NotreDame/Personal Python/Formula1/artifacts/shap_global_bar_from_contribs_tuned.png",
+      "mtime": 1759024813.7906246,
+      "size": 32678,
+      "sha256": "8013343ac68901255a729b08fa1e25c1f69977da795c864b1aae0302d433763b"
+    },
+    "shap_minimal_beeswarm.png": {
+      "path": "/Users/grantsuchecki/Desktop/Desktop/Essentials/NotreDame/Personal Python/Formula1/artifacts/shap_minimal_beeswarm.png",
+      "mtime": 1759172832.094744,
+      "size": 59494,
+      "sha256": "39fb68a26524a774298aee19af9208256a2470b2257e48e8c8be379d11a0020a"
+    },
+    "shap_minimal_cv_beeswarm.png": {
+      "path": "/Users/grantsuchecki/Desktop/Desktop/Essentials/NotreDame/Personal Python/Formula1/artifacts/shap_minimal_cv_beeswarm.png",
+      "mtime": 1759173867.6590748,
+      "size": 56299,
+      "sha256": "d1ccdc3f93ae708588a7d081a54e5542c2a074ebdf2df659488245ec8765be49"
+    },
+    "shap_minimal_cv_rain_dependence.png": {
+      "path": "/Users/grantsuchecki/Desktop/Desktop/Essentials/NotreDame/Personal Python/Formula1/artifacts/shap_minimal_cv_rain_dependence.png",
+      "mtime": 1759173867.715526,
+      "size": 20198,
+      "sha256": "448626ae80c83042711c879d53985a29b6b267fad672aca262ab6e739c51559f"
+    },
+    "shap_minimal_cv_randomized_beeswarm.png": {
+      "path": "/Users/grantsuchecki/Desktop/Desktop/Essentials/NotreDame/Personal Python/Formula1/artifacts/shap_minimal_cv_randomized_beeswarm.png",
+      "mtime": 1759174327.9141352,
+      "size": 63295,
+      "sha256": "dcda0cf8fb7a4ac1bddbfebdbcd15f9c12d659997381b437669faa848ef49454"
+    },
+    "shap_minimal_rain_dependence.png": {
+      "path": "/Users/grantsuchecki/Desktop/Desktop/Essentials/NotreDame/Personal Python/Formula1/artifacts/shap_minimal_rain_dependence.png",
+      "mtime": 1759172832.1498706,
+      "size": 20160,
+      "sha256": "4be5b92477b6f74e87e08795c3d4cee28865938e3c61bf11bd8ba771c423c8a2"
+    },
+    "shap_tuned_beeswarm.png": {
+      "path": "/Users/grantsuchecki/Desktop/Desktop/Essentials/NotreDame/Personal Python/Formula1/artifacts/shap_tuned_beeswarm.png",
+      "mtime": 1759026368.7731633,
+      "size": 97851,
+      "sha256": "e04a9f4b00689c12806cfd76ace2bd86d3b099d960671eb5eaed09a9db75885d"
+    },
+    "shap_tuned_beeswarm_with_ids.png": {
+      "path": "/Users/grantsuchecki/Desktop/Desktop/Essentials/NotreDame/Personal Python/Formula1/artifacts/shap_tuned_beeswarm_with_ids.png",
+      "mtime": 1759026514.2295475,
+      "size": 96712,
+      "sha256": "ad6954f1950f8b8a7587158e6b56b07da1e241bcae311f19b8577c7b784939fc"
+    },
+    "shap_with_pipeline_beeswarm_fallback.png": {
+      "path": "/Users/grantsuchecki/Desktop/Desktop/Essentials/NotreDame/Personal Python/Formula1/artifacts/shap_with_pipeline_beeswarm_fallback.png",
+      "mtime": 1759083462.6830654,
+      "size": 118444,
+      "sha256": "200238d1f74afac6ed93ebab0e4cb7c8d7321b28d378897187b3b744d0127fd6"
+    },
+    "shap_with_pipeline_global.png": {
+      "path": "/Users/grantsuchecki/Desktop/Desktop/Essentials/NotreDame/Personal Python/Formula1/artifacts/shap_with_pipeline_global.png",
+      "mtime": 1759083296.6798987,
+      "size": 86880,
+      "sha256": "4a6528d532d352d414e7887eaab93b43db0bd0b5ce30d165ce041aca5572d62b"
+    },
+    "shap_with_rain_summary.png": {
+      "path": "/Users/grantsuchecki/Desktop/Desktop/Essentials/NotreDame/Personal Python/Formula1/artifacts/shap_with_rain_summary.png",
+      "mtime": 1759172352.4444294,
+      "size": 66482,
+      "sha256": "616c5d492fde571f09e1c5f0b07a95ff2920abb6e7dda4f232fd3effd9683637"
+    },
+    "shap_xgb_tuned_conservative_beeswarm_fallback.png": {
+      "path": "/Users/grantsuchecki/Desktop/Desktop/Essentials/NotreDame/Personal Python/Formula1/artifacts/shap_xgb_tuned_conservative_beeswarm_fallback.png",
+      "mtime": 1759083462.5835915,
+      "size": 96647,
+      "sha256": "5f2050efd7355f2994dc53bc3416a031d71a6e1f1d4795f3f2121f43109c291e"
+    },
+    "shap_xgb_tuned_conservative_global.png": {
+      "path": "/Users/grantsuchecki/Desktop/Desktop/Essentials/NotreDame/Personal Python/Formula1/artifacts/shap_xgb_tuned_conservative_global.png",
+      "mtime": 1759083295.5713725,
+      "size": 52247,
+      "sha256": "3ce2210ec5d3c9d2c40cbf7defa1d395ef9caa3b575722639f9673321b7e720a"
+    },
+    "shap_xgb_untitled_external_beeswarm_fallback.png": {
+      "path": "/Users/grantsuchecki/Desktop/Desktop/Essentials/NotreDame/Personal Python/Formula1/artifacts/shap_xgb_untitled_external_beeswarm_fallback.png",
+      "mtime": 1759083462.7654183,
+      "size": 112352,
+      "sha256": "c7dab40324f6ae80844cc69b239a4e3c1b2d08bc48d3d480e4f72b3c239b4669"
+    },
+    "shap_xgb_untitled_external_global.png": {
+      "path": "/Users/grantsuchecki/Desktop/Desktop/Essentials/NotreDame/Personal Python/Formula1/artifacts/shap_xgb_untitled_external_global.png",
+      "mtime": 1759083296.7460618,
+      "size": 50766,
+      "sha256": "5a8610a0e8da9f25942d9c70742a2da7724886536b595fe0f13c7aecd908451c"
+    },
+    "category_mappings.json": {
+      "path": "/Users/grantsuchecki/Desktop/Desktop/Essentials/NotreDame/Personal Python/Formula1/artifacts/category_mappings.json",
+      "mtime": 1759176640.3698936,
+      "size": 11523,
+      "sha256": "87cfc4aaea7d4f6a6db26cdb0763fdf2a3dca01e873021e3d64d40f09fe47c74"
+    },
+    "columns_minimal.json": {
+      "path": "/Users/grantsuchecki/Desktop/Desktop/Essentials/NotreDame/Personal Python/Formula1/artifacts/columns_minimal.json",
+      "mtime": 1759172831.8634965,
+      "size": 140,
+      "sha256": "e41f1acf4b51f186ab22182e71adac600d05ec3c55dddb13f9797761d30791e7"
+    },
+    "columns_used.json": {
+      "path": "/Users/grantsuchecki/Desktop/Desktop/Essentials/NotreDame/Personal Python/Formula1/artifacts/columns_used.json",
+      "mtime": 1759176640.4173243,
+      "size": 934,
+      "sha256": "3e31ae36337e956cfd4bfc3bade858c55ffd2ac93a2f8bbe0659a3652a1e4d00"
+    },
+    "manifest.json": {
+      "path": "/Users/grantsuchecki/Desktop/Desktop/Essentials/NotreDame/Personal Python/Formula1/artifacts/manifest.json",
+      "mtime": 1759177817.0762925,
+      "size": 43875,
+      "sha256": "ca21e1e67ec06a7215eecf347ad1a51cbc594e94da9e4ed520d138c853a1f48c"
+    },
+    "metrics_test_xgb.json": {
+      "path": "/Users/grantsuchecki/Desktop/Desktop/Essentials/NotreDame/Personal Python/Formula1/artifacts/metrics_test_xgb.json",
+      "mtime": 1759024355.932671,
+      "size": 61,
+      "sha256": "975b5ebd336cc6a2eb5ea7cd9634dbf04c7a4d0b76fae7416d9e3c7da6f5f7f2"
+    },
+    "metrics_val_xgb.json": {
+      "path": "/Users/grantsuchecki/Desktop/Desktop/Essentials/NotreDame/Personal Python/Formula1/artifacts/metrics_val_xgb.json",
+      "mtime": 1759024355.9325156,
+      "size": 60,
+      "sha256": "b149c8a55bddea3e25d7417637924e1a9a3db5f16cabb8773e343eda8762ef89"
+    },
+    "models_report_summary.json": {
+      "path": "/Users/grantsuchecki/Desktop/Desktop/Essentials/NotreDame/Personal Python/Formula1/artifacts/models_report_summary.json",
+      "mtime": 1759083171.655599,
+      "size": 7940,
+      "sha256": "b067f2e7793719862be120d82d208091240b3c00ca79e6f8373e3be4e22ceb97"
+    },
+    "shap_summary_test_xgb.json": {
+      "path": "/Users/grantsuchecki/Desktop/Desktop/Essentials/NotreDame/Personal Python/Formula1/artifacts/shap_summary_test_xgb.json",
+      "mtime": 1759024355.9344869,
+      "size": 424,
+      "sha256": "00560c1163fde0d4632814b0be7ecf3fa4b22fe2dadb8aba1cb570b9bdccdb97"
+    },
+    "shap_summary_val_xgb.json": {
+      "path": "/Users/grantsuchecki/Desktop/Desktop/Essentials/NotreDame/Personal Python/Formula1/artifacts/shap_summary_val_xgb.json",
+      "mtime": 1759024355.9341977,
+      "size": 413,
+      "sha256": "84f6428bfa560288957269ef03813371575ddf90a74ede65f8b283fc577d9acb"
+    },
+    "xgb_model.json": {
+      "path": "/Users/grantsuchecki/Desktop/Desktop/Essentials/NotreDame/Personal Python/Formula1/artifacts/xgb_model.json",
+      "mtime": 1759023758.897611,
+      "size": 294652,
+      "sha256": "2ed19cf6cffeba5fbe27234359aa650e03f9efbedb4cd46e4b6f788ef86f0235"
+    },
+    "xgb_model_tuned_conservative.json": {
+      "path": "/Users/grantsuchecki/Desktop/Desktop/Essentials/NotreDame/Personal Python/Formula1/artifacts/xgb_model_tuned_conservative.json",
+      "mtime": 1759024719.9378386,
+      "size": 345258,
+      "sha256": "b29c2f3c5a6e164e3e297a76fcb61dbed6821e47980ebc2e26829a6a4d45f892"
+    },
+    "xgb_model_untitled_external.json": {
+      "path": "/Users/grantsuchecki/Desktop/Desktop/Essentials/NotreDame/Personal Python/Formula1/artifacts/xgb_model_untitled_external.json",
+      "mtime": 1759024327.033463,
+      "size": 294652,
+      "sha256": "2ed19cf6cffeba5fbe27234359aa650e03f9efbedb4cd46e4b6f788ef86f0235"
+    },
+    "xgb_tune_conservative_best.json": {
+      "path": "/Users/grantsuchecki/Desktop/Desktop/Essentials/NotreDame/Personal Python/Formula1/artifacts/xgb_tune_conservative_best.json",
+      "mtime": 1759024719.9501143,
+      "size": 194,
+      "sha256": "5cfd9f32f0eff450043472841cdfff89ccdca2bd9ab1d7dd598b53faf5a7efdd"
+    }
+  }
+}
