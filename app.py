@@ -3,7 +3,6 @@ import pandas as pd
 import numpy as np
 from pathlib import Path
 import importlib.util
-import fastf1
 import re
 import joblib
 import xgboost as xgb
@@ -70,42 +69,6 @@ def clean_driver_name(name: str) -> str:
     s = re.sub(r"\s+", " ", s)
 
     return s
-
-
-# -----------------------------------------------------------
-# FastF1 Driver Standings
-# -----------------------------------------------------------
-def get_fastf1_driver_points(season=2025):
-    fastf1.Cache.enable_cache("fastf1_cache")
-
-    standings = fastf1.api.driver_standings(season)
-
-    data = []
-    for entry in standings:
-        fname = entry["Driver"]["givenName"]
-        lname = entry["Driver"]["familyName"]
-        name = f"{fname} {lname}"
-
-        team = entry["Constructors"][0]["name"]
-        pts = float(entry["points"])
-
-        data.append({"Driver": name, "Team": team, "Points": pts})
-
-    return pd.DataFrame(data)
-
-
-def merge_points(df, season_df):
-    """Merge FastF1 standings into uploaded grid."""
-    merged = df.merge(season_df, on="Driver", how="left")
-
-    # If Points missing → fallback to neutral
-    max_pts = merged["Points"].max()
-    if pd.isna(max_pts) or max_pts <= 0:
-        merged["PointsProp"] = 0.5
-    else:
-        merged["PointsProp"] = merged["Points"] / max_pts
-
-    return merged
 
 
 # -----------------------------------------------------------
@@ -341,18 +304,8 @@ elif page == "Run Prediction":
     st.subheader("📋 Loaded Grid")
     st.dataframe(df, use_container_width=True)
 
-    # ----------------------------------------------------
-    # ⭐ FastF1 Live Points Integration
-    # ----------------------------------------------------
-    st.subheader("🔢 Auto-Calculating PointsProportion (via FastF1)")
-
-    try:
-        season_pts = get_fastf1_driver_points(2025)
-        df = merge_points(df, season_pts)
-        st.success("FastF1 points loaded.")
-    except Exception as e:
-        st.warning(f"FastF1 unavailable → using neutral PointsProp defaults. ({e})")
-        df["PointsProp"] = 0.5
+    # Set neutral PointsProp defaults
+    df["PointsProp"] = 0.5
 
     # ----------------------------------------------------
     # UI Slider for Tweaking PointsProp
