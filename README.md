@@ -1,6 +1,6 @@
 Link to Streamlit App
 
-https://f1-app-xztqjznicycatx82tcztqr.streamlit.app/
+https://www.f1pred.streamlit.app/ 
 
 ## Formula One Streamlit Model
 
