@@ -45,9 +45,15 @@ if "rain" not in st.session_state:
     st.session_state["rain"] = False
 
 
-# -----------------------------------------------------------
-# Name Splicer / Cleaner
-# -----------------------------------------------------------
+def quali_time_to_seconds(time_str):
+    """Convert MM:SS.sss to seconds."""
+    if pd.isna(time_str) or time_str == '':
+        return 0.0
+    try:
+        minutes, seconds = time_str.split(':')
+        return float(minutes) * 60 + float(seconds)
+    except:
+        return 0.0
 def clean_driver_name(name: str) -> str:
     if not isinstance(name, str):
         return name
@@ -326,6 +332,12 @@ elif page == "Run Prediction":
     df = pd.read_csv(grid_path)
     df["Driver"] = df["Driver"].astype(str).apply(clean_driver_name)
 
+    # Calculate AvgQualiTime from Q1, Q2, Q3 if available
+    if 'Q1' in df.columns and 'Q2' in df.columns and 'Q3' in df.columns:
+        df['AvgQualiTime'] = df[['Q1', 'Q2', 'Q3']].apply(lambda row: np.mean([quali_time_to_seconds(t) for t in row if pd.notna(t) and t != '']), axis=1)
+    else:
+        df['AvgQualiTime'] = 90.0  # default average time in seconds
+
     st.subheader("📋 Loaded Grid")
     st.dataframe(df, use_container_width=True)
 
@@ -383,9 +395,9 @@ elif page == "Run Prediction":
     X_train = pd.read_csv(xtrain_path)
     # Use raw feature columns that the preprocessing pipeline expects
     raw_cols = [
-        'GridPosition', 'AirTemp_C', 'TrackTemp_C', 'Humidity_%', 'Pressure_hPa',
+        'GridPosition', 'AvgQualiTime', 'weather_tire_cluster', 'AirTemp_C', 'TrackTemp_C', 'Humidity_%', 'Pressure_hPa',
         'WindSpeed_mps', 'WindDirection_deg', 'races_prior_this_season', 'Rain',
-        'Driver', 'Team', 'PointsProp', 'SOFT', 'MEDIUM', 'HARD'
+        'Driver', 'Team', 'PointsProp', 'SOFT', 'MEDIUM', 'HARD', 'INTERMEDIATE', 'WET'
     ]
 
     model_input = pd.DataFrame(0, index=range(len(df)), columns=raw_cols)
@@ -393,6 +405,8 @@ elif page == "Run Prediction":
     # Fill known fields
     settings = {
         "GridPosition": df["Pos."].astype(int),
+        "AvgQualiTime": df["AvgQualiTime"],
+        "weather_tire_cluster": 0,  # default cluster
         "AirTemp_C": st.session_state["air_temp"],
         "TrackTemp_C": st.session_state["track_temp"],
         "Humidity_%": st.session_state["humidity"],
@@ -403,12 +417,14 @@ elif page == "Run Prediction":
         "Rain": 1 if st.session_state["rain"] else 0,
 
         "Driver": df["Driver"],
-        "TeamName": df["Team"],
+        "Team": df["Team"],
         "PointsProp": df["PointsProp"],
 
         "SOFT": 1 if st.session_state["tire"] == "SOFT" else 0,
         "MEDIUM": 1 if st.session_state["tire"] == "MEDIUM" else 0,
         "HARD": 1 if st.session_state["tire"] == "HARD" else 0,
+        "INTERMEDIATE": 0,
+        "WET": 0,
     }
 
     for k, v in settings.items():
