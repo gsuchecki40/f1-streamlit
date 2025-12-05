@@ -31,4 +31,4 @@ The model used is an XGBoost ML model that takes in the following variables to p
 **Variables**
 - Weather Info: Located on the sliders and text inputs
 - AvgQualiTime: Takes the average of all Q1, Q2, and Q3 to factor into the prediciton
-- PointsProp: The proportion of points that a driver has earned throughout the season compared to what is available
+- PointsProp: The proportion of points that a driver has earned throughout the season compared to what has been available
