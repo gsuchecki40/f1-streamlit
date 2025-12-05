@@ -6,7 +6,7 @@ This model operates with the Streamlit and a playwright scraper file that can be
 
 ## Scraper
 
-Inside of the Qualyfing_Scrape.py code, all that would need to be changed to change races is the country name code that the formula1 website uses on their html inside of their dropdown lists. Example Below:
+Inside of the Qualifying_Scrape.py code, all that would need to be changed to change races is the country name code that the formula1 website uses on their html inside of their dropdown lists. Example Below:
 
 ```python
 page.get_by_label("All").get_by_role(
